@@ -1,0 +1,52 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum RoleType {
+  ADMIN
+  USER_SIMPLE
+  PRO_RESTAURANT
+  PRO_TRAITEUR
+  PRO_VENUE
+  PRO_SONO
+  PRO_PHOTO
+}
+
+enum SubscriptionStatus {
+  FREE
+  PREMIUM
+  TRIAL
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String
+  fullName  String
+  language  String   @default("fr") // fr, en, mg
+  subscriptionStatus SubscriptionStatus @default(FREE)
+  subscriptionExpiresAt DateTime?
+  currentRole RoleType @default(USER_SIMPLE) 
+  
+  roles     UserRole[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
+
+model UserRole {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role      RoleType
+  createdAt DateTime @default(now())
+
+  @@unique([userId, role])
+  @@map("user_roles")
+}

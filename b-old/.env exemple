@@ -1,0 +1,5 @@
+
+DATABASE_URL="postgresql://mealuser:mealpassword@localhost:5432/mealapp_db?schema=public"
+JWT_SECRET="ton_super_secret_key_change_en_prod"
+JWT_EXPIRATION="7d"
+PORT=3000
