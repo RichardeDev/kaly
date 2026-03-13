@@ -1,0 +1,29 @@
+{
+  "auth": {
+    "login_title": "Connexion",
+    "register_title": "Inscription",
+    "email_hint": "Adresse email",
+    "password_hint": "Mot de passe",
+    "fullname_hint": "Nom complet",
+    "login_button": "Se connecter",
+    "register_button": "S'inscrire",
+    "no_account": "Pas encore de compte ?",
+    "has_account": "Déjà un compte ?",
+    "error_invalid_credentials": "Email ou mot de passe incorrect"
+  },
+  "roles": {
+    "user_simple": "Utilisateur",
+    "pro_restaurant": "Restaurant",
+    "admin": "Administrateur"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "logout": "Déconnexion"
+  },
+  "theme": {
+    "light": "Mode Clair",
+    "dark": "Mode Sombre",
+    "system": "Système"
+  }
+}

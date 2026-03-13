@@ -1,0 +1,29 @@
+{
+  "auth": {
+    "login_title": "Login",
+    "register_title": "Register",
+    "email_hint": "Email address",
+    "password_hint": "Password",
+    "fullname_hint": "Full Name",
+    "login_button": "Login",
+    "register_button": "Register",
+    "no_account": "No account yet?",
+    "has_account": "Already have an account?",
+    "error_invalid_credentials": "Invalid email or password"
+  },
+  "roles": {
+    "user_simple": "User",
+    "pro_restaurant": "Restaurant",
+    "admin": "Admin"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "logout": "Logout"
+  },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode",
+    "system": "Système"
+  }
+}

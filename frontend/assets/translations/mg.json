@@ -1,0 +1,29 @@
+{
+  "auth": {
+    "login_title": "Hiditra",
+    "register_title": "Fisoratana anarana",
+    "email_hint": "Mailaka elektronika",
+    "password_hint": "Tenimiafina",
+    "fullname_hint": "Anarana feno",
+    "login_button": "Hiditra",
+    "register_button": "Fisoratana",
+    "no_account": "Mbola tsy manana kaonty?",
+    "has_account": "Efa manana kaonty?",
+    "error_invalid_credentials": "Mailaka na tenimiafina diso"
+  },
+  "roles": {
+    "user_simple": "Mpiasa",
+    "pro_restaurant": "Restoranta",
+    "admin": "Mpitantana"
+  },
+  "common": {
+    "loading": "Miandry...",
+    "error": "Nisy olana nitranga",
+    "logout": "Hivoaka"
+  },
+  "theme": {
+    "light": "Mazava",
+    "dark": "Maizina",
+    "system": "Système"
+  }
+}
